@@ -5,7 +5,7 @@ public class StringCalculator {
         if (numbers.isEmpty()) {
             return 0;
         }
-        String[] nums = numbers.split(",");
+        String[] nums = numbers.split(",|\n");  // Allow both commas and new lines
         int sum = 0;
         for (String num : nums) {
             sum += Integer.parseInt(num);
