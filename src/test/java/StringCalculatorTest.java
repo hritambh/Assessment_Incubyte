@@ -47,4 +47,10 @@ public class StringCalculatorTest {
         int result = calculator.add("//;\n1;2");
         assertEquals(3, result);  // The input "//;\n1;2" should return 3
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testAddWithNegativeNumbers() {
+        StringCalculator calculator = new StringCalculator();
+        calculator.add("1,-2,3");  // Should throw an exception for -2
+    }
 }
