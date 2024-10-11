@@ -33,4 +33,11 @@ public class StringCalculatorTest {
         int result = calculator.add("1,2,3");
         assertEquals(6, result);  // The input "1,2,3" should return 6
     }
+
+    @Test
+    public void testAddWithNewLines() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("1\n2,3");
+        assertEquals(6, result);  // The input "1\n2,3" should return 6
+    }
 }
