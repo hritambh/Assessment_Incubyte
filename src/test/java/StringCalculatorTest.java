@@ -12,4 +12,11 @@ public class StringCalculatorTest {
         int result = calculator.add("");
         assertEquals(0, result);  // An empty string should return 0
     }
+
+    @Test
+    public void testAddSingleNumber() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("1");
+        assertEquals(1, result);  // The input "1" should return 1
+    }
 }
