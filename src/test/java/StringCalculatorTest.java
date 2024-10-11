@@ -19,4 +19,11 @@ public class StringCalculatorTest {
         int result = calculator.add("1");
         assertEquals(1, result);  // The input "1" should return 1
     }
+
+    @Test
+    public void testAddTwoNumbers() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("1,2");
+        assertEquals(3, result);  // The input "1,2" should return 3
+    }
 }
