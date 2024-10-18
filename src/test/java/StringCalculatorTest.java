@@ -53,4 +53,12 @@ public class StringCalculatorTest {
         StringCalculator calculator = new StringCalculator();
         calculator.add("1,-2,3");  // Should throw an exception for -2
     }
+
+    // custom delimeter of "*" ,if so then multiply the nos instead of adding
+    @Test
+    public void testMultiplyWithCustomDelimeter(){
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("//*\n2*3*4*2");
+        assertEquals(48,result);
+    }
 }
