@@ -61,4 +61,13 @@ public class StringCalculatorTest {
         int result = calculator.add("//*\n2*3*4*2");
         assertEquals(48,result);
     }
+
+    // Designing a string caluclator that accept a string
+    // do addition operationon the elements of the string if the delimeter is '+'
+    // do multipliaction if the dilimeter in '*'
+    // throw illegal argumnet exception if any of the element is negative
+
+
+
+
 }
